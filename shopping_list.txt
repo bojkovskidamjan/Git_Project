@@ -1,5 +1,5 @@
-Milk
-Bread
-Meat
-Carrot
-Shampoo
+Milk x4
+Bread x1
+Meat x7
+Carrot x9
+Shampoo x2
