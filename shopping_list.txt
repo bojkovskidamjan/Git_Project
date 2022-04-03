@@ -2,4 +2,4 @@ Milk x4
 Bread x2
 Meat x7
 Carrot x9
-Shampoo x2
+Shampoo x4
