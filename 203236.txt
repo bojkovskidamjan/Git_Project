@@ -1,0 +1,146 @@
+cd Desktop
+git clone https://github.com/bojkovskidamjan/SI_2022_lab1_203236.git SI
+cd SI
+
+//Create shopping list.txt//
+
+notepad shopping_list.txt
+git add .
+git commit -m "Add 5 items to the shopping list"
+
+// Modify shopping list//
+
+git add.
+git commit -m "Add quantities to the items"
+
+
+//Create branches //
+
+git branch branch1
+git branch branch2
+
+//Logs//
+
+git log
+
+    commit d2a3b0b308c8259ffd67983d30fe0cf273c42942 (HEAD -> master, branch2, branch1)
+    Author: bojkovskidamjan <damjan.bojkovski@students.finki.ukim.mk>
+    Date:   Sun Apr 3 15:22:39 2022 +0200
+
+        Add quantities to the items
+
+    commit 1ac7152515a3e861f83c941c6c951a113fa81988
+    Author: bojkovskidamjan <damjan.bojkovski@students.finki.ukim.mk>
+    Date:   Sun Apr 3 15:21:45 2022 +0200
+
+        Add 5 items to the shopping list
+
+    commit b03a109daf616fbf7f0e2d9f0b70f99e45424686 (origin/master, origin/HEAD)
+    Author: bojkovskidamjan <100250779+bojkovskidamjan@users.noreply.github.com>
+    Date:   Sun Apr 3 15:16:04 2022 +0200
+
+        Update README.md
+
+    commit d57b39b66265270417aec269b3a16170a8e77d61
+    Author: bojkovskidamjan <100250779+bojkovskidamjan@users.noreply.github.com>
+    Date:   Sun Apr 3 15:15:48 2022 +0200
+
+        Initial commit
+
+// Synchronizied //
+git push --all origin
+
+
+git checkout branch1
+git add .
+git commit -m "Change quantity of item #5"
+
+git checkout master
+git add .
+git commit -m "Change quantity of item #2"
+git push --all origin
+
+
+git checkout branch2
+git add .
+git commit -m "Modify item #4"
+
+git log
+    commit 20baa5c12cfa8b8436ea991a12720c39a3a41e9a (HEAD -> branch2)
+    Author: bojkovskidamjan <damjan.bojkovski@students.finki.ukim.mk>
+    Date:   Sun Apr 3 15:31:24 2022 +0200
+
+        Modify item #4
+
+    commit d2a3b0b308c8259ffd67983d30fe0cf273c42942 (origin/branch2)
+    Author: bojkovskidamjan <damjan.bojkovski@students.finki.ukim.mk>
+    Date:   Sun Apr 3 15:22:39 2022 +0200
+
+        Add quantities to the items
+
+    commit 1ac7152515a3e861f83c941c6c951a113fa81988
+    Author: bojkovskidamjan <damjan.bojkovski@students.finki.ukim.mk>
+    Date:   Sun Apr 3 15:21:45 2022 +0200
+
+        Add 5 items to the shopping list
+
+    commit b03a109daf616fbf7f0e2d9f0b70f99e45424686
+    Author: bojkovskidamjan <100250779+bojkovskidamjan@users.noreply.github.com>
+    Date:   Sun Apr 3 15:16:04 2022 +0200
+
+        Update README.md
+
+    commit d57b39b66265270417aec269b3a16170a8e77d61
+    Author: bojkovskidamjan <100250779+bojkovskidamjan@users.noreply.github.com>
+    Date:   Sun Apr 3 15:15:48 2022 +0200
+
+        Initial commit
+
+
+
+git add .
+git commit --amend -m "Modify item #4 and add item #6"
+
+git log
+    commit 5b8d2d504fb890e7e7ddac8577c29c5b524b1426 (HEAD -> branch2)
+    Author: bojkovskidamjan <damjan.bojkovski@students.finki.ukim.mk>
+    Date:   Sun Apr 3 15:31:24 2022 +0200
+
+        Modify item #4 and add item #6
+
+    commit d2a3b0b308c8259ffd67983d30fe0cf273c42942 (origin/branch2)
+    Author: bojkovskidamjan <damjan.bojkovski@students.finki.ukim.mk>
+    Date:   Sun Apr 3 15:22:39 2022 +0200
+
+        Add quantities to the items
+
+    commit 1ac7152515a3e861f83c941c6c951a113fa81988
+    Author: bojkovskidamjan <damjan.bojkovski@students.finki.ukim.mk>
+    Date:   Sun Apr 3 15:21:45 2022 +0200
+
+        Add 5 items to the shopping list
+
+    commit b03a109daf616fbf7f0e2d9f0b70f99e45424686
+    Author: bojkovskidamjan <100250779+bojkovskidamjan@users.noreply.github.com>
+    Date:   Sun Apr 3 15:16:04 2022 +0200
+
+        Update README.md
+
+    commit d57b39b66265270417aec269b3a16170a8e77d61
+    Author: bojkovskidamjan <100250779+bojkovskidamjan@users.noreply.github.com>
+    Date:   Sun Apr 3 15:15:48 2022 +0200
+
+        Initial commit
+
+
+git checkout master
+git merge branch1 (No conflict, recursive strategy)
+
+git merge branch2 (Conflict, recursive strategy, prifateni promeni so Atom)
+git add .
+git commit -m "Merged branch2 and accepted data"
+
+
+notepad 203236.txt
+git commit -m "Add docs"
+git push -all origin
