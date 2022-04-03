@@ -1,5 +1,6 @@
 Milk x4
 Bread x1
 Meat x7
-Carrot x9
+Banana x9
 Shampoo x2
+Cheese x5
