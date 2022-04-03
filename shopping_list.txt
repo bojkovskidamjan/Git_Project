@@ -1,5 +1,11 @@
 Milk x4
 Bread x2
 Meat x7
+<<<<<<< HEAD
 Carrot x9
 Shampoo x4
+=======
+Banana x9
+Shampoo x2
+Cheese x5
+>>>>>>> branch2
